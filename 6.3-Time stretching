@@ -1,0 +1,6 @@
+### The basic idea of time stretching by time-segment processing is to divide the input sound into segments.
+Then if the sound is to be lengthened, some segments are repeated, while if the sound is to be shortened,
+some segments are discarded. A possible problem is amplitude and phase discontinuity at the boundaries of the
+segments. Amplitude discontinuities are avoided by partially overlapping the blocks, while phase
+discontinuities are avoided by a proper time alignment of the blocks. Two different strategies will
+be presented in Sections 6.3.2 and 6.3.3.
