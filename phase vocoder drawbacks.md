@@ -15,8 +15,7 @@ equal to one (no time stretching). If we use the same window for analysis and sy
 the sum of the square of the windows, regularly spaced at the resynthesis hope size, should
   be one.</li>
   <li>(4) For a Hanning window without zero-padding the hop size Rs has to be a divisor of N/4.</li>
-<li>(5) Hamming and Blackman windows provide smaller side lobes in the Fourier transform.
-However, they have the inconvenience of being non-zero at the edges, so that no tapering is done by using these windows alone. The resynthesis hop size should be a divisor</li>
+<li>(5) Hamming and Blackman windows provide smaller side lobes in the Fourier transform.However, they have the inconvenience of being non-zero at the edges, so that no tapering is done by using these windows alone. The resynthesis hop size should be a divisor</li>
 of N/8.
 <li>(6) Truncated Gaussian windows, which are good candidates, provide a sum that always has
   oscillations, but which can be below the level of perception.</li>
