@@ -65,7 +65,5 @@ lead to an efficient pitch-shifting algorithm. Therefore the following steps hav
   <li>(1) Calculate the phase increment per sample by dϕ(k) = ϕ(k)/Ra.</li>
 <li>(2) Multiply the phase increment by the transposition factor transpo and integrate the modified
   <li>phase increment according to ψ(n ˜ + 1, k) = ψ(n, k) ˜ + transpo ·ϕ(k)/Ra.</li>
-(3) Calculate the sum of sinusoids: when the transposition factor is greater than one, keep only
-frequencies under the Nyquist frequency bin N/2. This can be done by taking only the
-N/(2*transpo) frequency bins.<li>
+<li>(3) Calculate the sum of sinusoids: when the transposition factor is greater than one, keep only frequencies under the Nyquist frequency bin N/2. This can be done by taking only the N/(2*transpo) frequency bins.<li>
   </ul>
