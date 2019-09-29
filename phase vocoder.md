@@ -51,6 +51,7 @@ by a transposition factor (i.e., the magnitude spectrum is scaled)</p>
 is no longer necessary in the algorithm, because the 2π modulo relation is still preserved when the
 phase is multiplied by an integer.</p>
 
+<strong>Pitch shifting</strong>
 <p>Pitch shifting is different from frequency shifting: a frequency shift is an addition to every frequency
 (i.e., the magnitude spectrum is shifted), while pitch shifting is the multiplication of every frequency
 by a transposition factor (i.e., the magnitude spectrum is scaled).</p>
