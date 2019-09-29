@@ -46,3 +46,7 @@ of the analysis phase to get the phase for synthesis. So in this case it is more
 (i.e., the magnitude spectrum is shifted), while pitch shifting is the multiplication of every frequency
 by a transposition factor (i.e., the magnitude spectrum is scaled)</p>
 
+<strong>Integer ratio time stretching</strong>
+<p>When the time-stretching ratio is an integer (e.g., time stretching by 200%, 300%), the unwrapping
+is no longer necessary in the algorithm, because the 2π modulo relation is still preserved when the
+phase is multiplied by an integer.</p>
