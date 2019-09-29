@@ -21,4 +21,22 @@ the sum of the square of the windows, regularly spaced at the resynthesis hope s
 of N/8.
 <li>(6) Truncated Gaussian windows, which are good candidates, provide a sum that always has
   oscillations, but which can be below the level of perception.</li>
+  
+  <strong>Phase-locked vocoder</strong>
+<p>One of the most successful approaches to reduce the phase dispersion was proposed in [LD99a]. If
+we consider the processed sound to be mostly composed of quasi-sinusoidal components, then we
+can approximate its spectrum as the sum of the complex convolution of each of those components
+by the analysis window transform (this will be further explained in the spectral processing chapter).
+When we transform the sound, for instance time stretching it, the phase of those quasi-sinusoidal
+components has to propagate accordingly. What is really interesting here is that for each sinusoid
+the effect of the phase propagation on the spectrum is nothing more than a constant phase rotation
+of all the spectral bins affected by it. This method is referred to as phase-locked vocoder, since
+the phase of each spectral bin is locked to the phase of one spectral peak.</p>
+
+<strong>Integer ratio time stretching<strong>
+<p>When the time-stretching ratio is an integer (e.g., time stretching by 200%, 300%), the unwrapping
+is no longer necessary in the algorithm, because the 2π modulo relation is still preserved when the
+phase is multiplied by an integer. The key point here is that we can make a direct multiplication
+of the analysis phase to get the phase for synthesis. So in this case it is more obvious and elegant
+  to use the following algorithm</p>
 
