@@ -21,7 +21,7 @@ the sum of the square of the windows, regularly spaced at the resynthesis hope s
 of N/8.
 <li>(6) Truncated Gaussian windows, which are good candidates, provide a sum that always has
   oscillations, but which can be below the level of perception.</li>
-  
+</ul>
 <strong>Phase-locked vocoder</strong>
 <p>One of the most successful approaches to reduce the phase dispersion was proposed in [LD99a]. If
 we consider the processed sound to be mostly composed of quasi-sinusoidal components, then we
