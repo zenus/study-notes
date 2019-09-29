@@ -33,7 +33,7 @@ the effect of the phase propagation on the spectrum is nothing more than a const
 of all the spectral bins affected by it. This method is referred to as phase-locked vocoder, since
 the phase of each spectral bin is locked to the phase of one spectral peak.</p>
 
-<strong>Integer ratio time stretching<strong>
+<strong>Integer ratio time stretching</strong>
 <p>When the time-stretching ratio is an integer (e.g., time stretching by 200%, 300%), the unwrapping
 is no longer necessary in the algorithm, because the 2π modulo relation is still preserved when the
 phase is multiplied by an integer. The key point here is that we can make a direct multiplication
