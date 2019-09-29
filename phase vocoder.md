@@ -22,7 +22,7 @@ of N/8.
 <li>(6) Truncated Gaussian windows, which are good candidates, provide a sum that always has
   oscillations, but which can be below the level of perception.</li>
   
-  <strong>Phase-locked vocoder</strong>
+<strong>Phase-locked vocoder</strong>
 <p>One of the most successful approaches to reduce the phase dispersion was proposed in [LD99a]. If
 we consider the processed sound to be mostly composed of quasi-sinusoidal components, then we
 can approximate its spectrum as the sum of the complex convolution of each of those components
@@ -39,4 +39,10 @@ is no longer necessary in the algorithm, because the 2π modulo relation is stil
 phase is multiplied by an integer. The key point here is that we can make a direct multiplication
 of the analysis phase to get the phase for synthesis. So in this case it is more obvious and elegant
   to use the following algorithm</p>
+  
+  
+<strong>Pitch shifting</strong>
+<p>Pitch shifting is different from frequency shifting: a frequency shift is an addition to every frequency
+(i.e., the magnitude spectrum is shifted), while pitch shifting is the multiplication of every frequency
+by a transposition factor (i.e., the magnitude spectrum is scaled)</p>
 
