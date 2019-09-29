@@ -55,3 +55,17 @@ phase is multiplied by an integer.</p>
 <p>Pitch shifting is different from frequency shifting: a frequency shift is an addition to every frequency
 (i.e., the magnitude spectrum is shifted), while pitch shifting is the multiplication of every frequency
 by a transposition factor (i.e., the magnitude spectrum is scaled).</p>
+
+<strong>Filter-bank approach (sum of sinusoids)</strong>
+<p>In the time-stretching algorithm using the sum of sinusoids (see Section 7.3) we have an evaluation
+of instantaneous frequencies. As a matter of fact transposing all the instantaneous frequencies can
+lead to an efficient pitch-shifting algorithm. Therefore the following steps have to be performed
+(see Figure 7.26):</p>
+<u>
+  <li>(1) Calculate the phase increment per sample by dϕ(k) = ϕ(k)/Ra.</li>
+<li>(2) Multiply the phase increment by the transposition factor transpo and integrate the modified
+  <li>phase increment according to ψ(n ˜ + 1, k) = ψ(n, k) ˜ + transpo ·ϕ(k)/Ra.</li>
+(3) Calculate the sum of sinusoids: when the transposition factor is greater than one, keep only
+frequencies under the Nyquist frequency bin N/2. This can be done by taking only the
+N/(2*transpo) frequency bins.<li>
+  </ul>
