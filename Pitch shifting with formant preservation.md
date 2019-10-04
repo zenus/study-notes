@@ -9,4 +9,9 @@ are interpolated from length N1 to length N2. This interpolation or resampling a
 time duration and thus performs pitch shifting in the time domain. The resampled segment is
 then applied to an FFT/IFFT-based analysis/synthesis system, where the correction function for
       the formant move is computed by the cepstrum method</p></div></li>
+  <li><div>Resampling of the excitation signal
+    <p>Instead of moving the formants, an alternative technique is to calculate an excitation signal by
+removing the spectral envelope, to process the excitation signal by a pitch shifting algorithm and
+to filter the pitch shifted excitation signal with the original spectral envelope. LPC algorithms
+can be used for this approach</p></div></li>
 </ul>
